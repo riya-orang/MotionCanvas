@@ -34,7 +34,7 @@ export default function User() {
     };
     console.log(user);
     axios
-      .post("http://localhost:5000/users/add", user)
+      .post("https://motion-canvas-three.vercel.app/users/add", user)
       .then((res) => console.log(res.data));
 
     setUsername("");
