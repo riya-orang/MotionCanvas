@@ -86,7 +86,7 @@ function Dashboard() {
 
   React.useEffect(() => {
     axios
-      .get("http://localhost:5000/exercises")
+      .get("https://motion-canvas-three.vercel.app/exercises")
       .then((response) => {
         setExercises(response.data);
       })
@@ -97,7 +97,7 @@ function Dashboard() {
 
   const deleteExercise = (id) => {
     axios
-      .delete("http://localhost:5000/exercises/" + id)
+      .delete("https://motion-canvas-three.vercel.app/exercises/" + id)
       .then((response) => {
         console.log(response.data);
       });
